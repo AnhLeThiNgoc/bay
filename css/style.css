@@ -1,6 +1,25 @@
+#score {
+   font: 46px fantasy;
+   /*text-align: center;*/
+   margin-left: 200px;
+   height: 50px;
+   color: #ff0;
+   text-shadow: 2px 2px 4px rgba(0,0,80,1.0);
+}
+
+#time {
+   font: 46px fantasy;
+   /*text-align: center;*/
+   margin-left: 400px;
+   height: 50px;
+   color: #ff0;
+   text-shadow: 2px 2px 4px rgba(0,0,80,1.0);
+}
+
+
 /*Mau cho hinh nen*/
 body{
-    background-image: linear-gradient(bottom, rgb(208,227,242) 30%, rgb(198,230,255) 100%);
+    background: linear-gradient(bottom, rgb(208,227,242) 30%, rgb(198,230,255) 100%);
     background-image: -o-linear-gradient(bottom, rgb(208,227,242) 30%, rgb(198,230,255) 100%);
     background-image: -moz-linear-gradient(bottom, rgb(208,227,242) 30%, rgb(198,230,255) 100%);
     background-image: -webkit-linear-gradient(bottom, rgb(208,227,242) 30%, rgb(198,230,255) 100%);
@@ -8,11 +27,16 @@ body{
     background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0.3, rgb(208,227,242)),color-stop(1, rgb(198,230,255)));
     font-family: Roboto;
 }
-/*body {
-	background-image:url(../images/cloud.png) re
-	;
-	background-color:blue;
-}*/
+body {
+
+	background-image:url(../images/anhnen.jpg) ;
+	/*background-attachment:fixed;
+	background-position:center;*/
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	
+	
+}
 article#cloud {
 	background: url(../images/cloud.png) repeat-x ;
 	
@@ -27,6 +51,15 @@ section#bird1 {
 	position: absolute;
 	cursor: pointer;
 }
+#qua1, #qua2{
+	background: url(../images/qua1.jpg) repeat-y;
+	width: 300;
+	height: 256px;
+	margin-top: 200px;
+	position: absolute;
+	cursor: pointer;
+}
+
 /*hien chu kem theo hinh anh chim bay*/
 section#bird1 p {
 	padding: 3px 5px;
@@ -55,11 +88,16 @@ section#bird1:hover p {
 }
 
 section#bird2 {
-	background: url(../images/bird2.png) no-repeat;
-	width: 97px;
-	height: 78px;
-	position: absolute;
-	margin-left: 600px;
+	background: url(../images/ong1.png) repeat-x;
+	position:fixed;
+	top: 10px;
+	/*width: 445px;
+	height: 350px;*/
+	height: 100%;
+	width: 100%;
+	/*position: absolute;*/
+	z-index: 0;
+	/*margin-left: 600px;*/
 }
 
 /* hien chu*/
@@ -92,6 +130,12 @@ article#content h3 a{
 	margin-right: 50px;
 	text-decoration: none; /*bo gach chan o duoi text*/
 }
+/*article#button form {
+	margin-left: 50px;
+	height: 40px;
+
+
+}*/
 
 footer {
 	background: url(../images/background.png) repeat-x top;
@@ -103,14 +147,90 @@ footer {
 	z-index: 1;
 }
 
-article#button form {
-	margin-left: 50px;
-	height: 40px;
+/*create button*/
+input#button {
 
+	-webkit-transform: rotateX( 35deg );
+	position: relative;
+	display: inline-block;
+	margin-bottom: 100px;
+	/*width: 120px;*/
+	padding: 42px 15px;
+	/*margin: 0px 0px;*/
+	background-color: #C91826;
+	color: #fff;
+	font-weight: bold;
+	font-size: 40px;
+	text-decoration: none;
+	text-align: center;
+	text-shadow: 0px -1px 0px rgba(0,0,0,0.5);
+	border: 1px solid;
+	border-color: #B21522;
+	border-radius: 78px;
+	-moz-border-radius: 78px;
+	-webkit-border-radius: 78px;
+	box-shadow:         
+		inset 0px -4px 5px rgba(255,255,255,0.2),
+		inset 0px 1px 5px rgba(255,255,255,0.2),
+		0px 12px 0px #231F20,
+		0px 14px 0px #231F20,
+		0px 16px 0px #231F20,
+		0px 8px 5px rgba(0,0,0,0.5);
+
+	-moz-box-shadow:    
+		inset 0px -4px 5px rgba(255,255,255,0.2),
+		inset 0px 1px 5px rgba(255,255,255,0.2),
+		0px 12px 0px #231F20,
+		0px 14px 0px #231F20,
+		0px 16px 0px #231F20,
+		0px 8px 5px rgba(0,0,0,0.5);
+
+	-webkit-box-shadow: 
+		inset 5px -4px 5px rgba(255,255,255,0.2),
+		inset 5px 1px 5px rgba(255,255,255,0.2),
+		0px 12px 0px #231F20,
+		0px 14px 0px #231F20,
+		0px 16px 0px #231F20;
 }
 
+input#button:hover {
+	background-color: #B21522;
+	color: #e3e3e3;
+}
 
+input#button:active {
+	top: 8px;
+	box-shadow:         
+		inset 0px 4px 5px rgba(255,255,255,0.4),
+		inset 0px -1px 5px rgba(255,255,255,0.2),
+		0px 8px 0px #231F20,
+		0px 9px 5px rgba(0,0,0,0.5);
 
+	-moz-box-shadow:    
+		inset 0px 4px 5px rgba(255,255,255,0.4),
+		inset 0px -1px 5px rgba(255,255,255,0.2),
+		0px 8px 0px #231F20,
+		0px 9px 5px rgba(0,0,0,0.5);
+
+	-webkit-box-shadow: 
+		inset 0px 4px 5px rgba(255,255,255,0.4),
+		inset 0px -1px 5px rgba(255,255,255,0.2),
+		0px 8px 0px #231F20,
+		0px 9px 5px rgba(0,0,0,0.5);
+}
+
+/*end create button*/
+
+div.commands {
+	position: fixed;
+	bottom: 20px;
+	left: 35%;
+}
+
+div.commands input#button
+ {
+	margin-bottom: 0;
+}
 
 
 
